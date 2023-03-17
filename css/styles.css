@@ -953,6 +953,31 @@ svg.footer-icon > use {
     padding: 14px 38px;
 }
 
+.subscribe-input {
+    display: block;
+    width: 264px;
+    height: 40px;
+    padding: 14px 38px;
+    background-color: #2E2F42;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.subscribe-input::placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    display: flex-start;
+    margin-left: 0px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.subscribe-email{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .modal-input:hover, .modal-input:focus{
     outline: none;
     border: 1px solid var(--btn-active-color);
@@ -1002,11 +1027,8 @@ svg.footer-icon > use {
     display: block;
     background-color: #4D5AE5;
     color: var(--primary-white-color);
-    
-    margin: 12px auto 0px;
     min-width: 169px;
-    height: 56px;
-    padding: 16px 32px;
+    padding: 8px 32px;
     border-radius: 4px;
     line-height: var(--text-line-height);
     font-weight: 500;
@@ -1015,10 +1037,21 @@ svg.footer-icon > use {
     border: 1px solid #9747FF; 
 }
 
-.modal-send-btn:is(:hover,:focus) {
+.modal-send-btn:hover, .modal-send-btn:focus) {
     transition: transform 250ms linear;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--btn-active-color);
     color: var(--primary-white-color);
     border: 1px solid #9747FF;
+}
+
+.modal-send-btn {
+    position: absolute;
+}
+
+.icon-send {
+    position: relative;
+    top: 10px;
+    left: 117px;
+    fill: #ffff;
 }
