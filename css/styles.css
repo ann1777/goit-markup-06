@@ -957,23 +957,27 @@ svg.footer-icon > use {
     display: block;
     width: 264px;
     height: 40px;
-    padding: 14px 38px;
+    padding: 8px 0px;
     background-color: #2E2F42;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
 }
 
 .subscribe-input::placeholder {
+    display:block;
     font-size: 12px;
     line-height: 24px;
     display: flex-start;
     margin-left: 0px;
+    padding-left: 10px;
+    margin-right: auto;
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
 
 .subscribe-email{
     display: flex;
+    justify-self: flex-end;
     align-items: center;
     gap: 16px;
 }
@@ -1025,14 +1029,17 @@ svg.footer-icon > use {
 
 .modal-send-btn {
     display: block;
+    display: flex-start;
     background-color: #4D5AE5;
     color: var(--primary-white-color);
     min-width: 169px;
-    padding: 8px 32px;
+    margin-top: -6px;
+    padding: 8px 16px 8px 24px;
     border-radius: 4px;
     line-height: var(--text-line-height);
     font-weight: 500;
     font-size: 16px;
+    text-align: start;
     outline: none;
     border: 1px solid #9747FF; 
 }
@@ -1045,13 +1052,18 @@ svg.footer-icon > use {
     border: 1px solid #9747FF;
 }
 
+.modal-send {
+    padding: 0px;
+}
+
 .modal-send-btn {
     position: absolute;
 }
 
 .icon-send {
     position: relative;
-    top: 10px;
-    left: 117px;
+    width: 24px;
+    height: 20px;
+    left: 110px;
     fill: #ffff;
 }
