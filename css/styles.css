@@ -356,20 +356,16 @@ header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-button:hover .modal-btn-icon,
-.svg-button:focus .modal-btn-icon {
-  fill: var(--primary-white-color);
-}
-
 .svg-button:hover,
 .svg-button:focus {
   background-color: var(--btn-active-color);
+  fill: #fff;
   border: none;
 }
 
 .modal-close:hover .svg-button,
 .modal-close:focus .svg-button {
-    fill: var(--primary-white-color);
+    fill: #fff;
 }
 
 .overlay {     
