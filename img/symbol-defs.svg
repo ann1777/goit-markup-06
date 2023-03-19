@@ -86,9 +86,9 @@
 </symbol>
 <symbol id="icn-modal-person" viewBox="0 0 32 32">
   <path d="M12 16c2.21 0 4-1.79 4-4s-1.79-4-4-4c-2.21 0-4 1.79-4 4s1.79 4 4 4zM12 18c-2.67 0-8 1.34-8 4v1c0 0.55 0.45 1 1 1h14c0.55 0 1-0.45 1-1v-1c0-2.66-5.33-4-8-4z"></path>
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6667" d="M30.167 4.833v22.333"></path>
+  <path d="M30.167 4.833v22.333"></path>
 </symbol>
-<symbol id="icn-modal-close" viewBox="0 0 32 32">
+<symbol id="modal-close" viewBox="0 0 32 32">
   <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
 </symbol>
 <symbol id="icn-footer-send-btn" viewBox="0 0 32 32">

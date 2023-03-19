@@ -523,7 +523,7 @@ header {
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--primary-white-color);
+  color: #fff;
   margin-top: 24px;
   padding: 16px 32px;
 
@@ -531,7 +531,8 @@ header {
 }
 .submit-modal-btn:hover,
 .submit-modal-btn:focus {
-  background-color: var(--hover-current-color);
+  background-color: var(--btn-active-color);
+  color: #fff;
 }
 
 
@@ -552,7 +553,7 @@ header {
     margin: 0px auto 48px;
     max-width: 496px;
     text-align: center;
-    color: var(--primary-white-color);
+    color: #fff;
     font-size: var(--header1-font-size);
     line-height: 1.1;
     font-weight: var(--header1-font-weight);
@@ -561,30 +562,27 @@ header {
 
 .hero-btn {
     display: block;
-    background-color: var(--accent-text-color);
-    color: var(--primary-white-color);
-    
     margin: 0 auto;
     min-width: 169px;
+    letter-spacing: 0.04em;
     height: 56px;
-    padding: 16px 32px;
     border-radius: 4px;
+    padding: 16px 32px;
+    background-color: var(--accent-text-color);
+    color: #fff;
     line-height: var(--text-line-height);
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 0.04em;
     outline: none;
-    border: none; 
+    border: 1px solid var(--accent-text-color); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.hero-btn:is(:hover,:focus) {
-    transition: transform 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.hero-btn:is(:hover, :focus) {
     background-color: var(--btn-active-color);
-    color: var(--primary-white-color);
-    border: 1px solid var(--btn-active-border-color);
+    color: #fff;
 }
-
 
 /** Main page section titles */
 .title {
