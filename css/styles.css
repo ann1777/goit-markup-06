@@ -356,12 +356,17 @@ header {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-button:hover,
+.svg-button:hover
 .svg-button:focus {
   background-color: var(--btn-active-color);
-  fill: #fff;
   border: none;
 }
+
+.svg-button:hover > use,
+.svg-button:focus > use {
+  fill: #fff;
+}
+
 
 .modal-close:hover .svg-button,
 .modal-close:focus .svg-button {
