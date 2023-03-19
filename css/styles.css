@@ -19,7 +19,7 @@
     --white-text-color: #E7E9FC;
     --chek-text-color: #757575
     /**White - White background */
-    --primary-white-color: #FFFFFF;
+    --primary-white-color: #fff;
     /**Navy Blue Modal - Modal overay*/
     --modal-overay-color: #2E2F42;
     /**Grey - Hero background*/
@@ -352,13 +352,19 @@ header {
 }
 
 .svg-button {
-  /* box-sizing: border-box; */
-  /* position:absolute; */
-  /* display: block; */
-  /* top: 32px; */
-  /* right: 32px; */
   fill: var(--svg-btn-fill);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-button:hover .modal-btn-icon,
+.svg-button:focus .modal-btn-icon {
+  fill: var(--primary-white-color);
+}
+
+.svg-button:hover,
+.svg-button:focus {
+  background-color: var(--btn-active-color);
+  border: none;
 }
 
 .modal-close:hover .svg-button,
@@ -784,14 +790,19 @@ svg.customers-icon {
     background-color: var(--dark-background-color);
 }
 
-.footer .container {
+.footer-container {
     display: flex;
     align-items: baseline;
+}
+.footer-media-header {
+  font-weight: 500;
+  color: var(--footer-discription-color);
+  margin-bottom: 16px;
 }
 
 .footer-content {
     margin-top: 16px;
-    max-width: var(--footer-content-width);
+    width: var(--footer-content-width);
     color: var(--white-text-color);
     line-height: var(--footer-content-line-height);
 }
@@ -847,7 +858,7 @@ svg.customers-icon {
 
 .footer-discription{
   font-weight: 500;
-  color: var(--footer-discription-color);
+  color: var(--primary-white-color);
   margin-bottom: 16px;
 }
 
@@ -972,7 +983,7 @@ svg.footer-form-icon{
 
 .filters:is(:focus, :hover) {
     background-color: var(--btn-active-color);
-    color: var(--primary-white-color);
+    color: #fff;
 }
 
 .filters:active {
@@ -1026,6 +1037,10 @@ svg.footer-form-icon{
     font-size: var(--header3-font-size);
     font-weight: var(--header3-font-weight);
     color: var(--title-text-color);
+}
+
+.card-text {
+  color: var(--text-color);
 }
 
 .card-box:is(:hover, :focus) .card-box {
