@@ -793,10 +793,13 @@ svg.customers-icon {
     align-items: baseline;
 }
 
-.footer-media-box,
-.footer-subscribe-box {
+.footer-media-box {
     margin-left: 120px;
 } 
+
+.footer-subscribe-box {
+    margin-left: 80px;
+}
  
 .footer-media-header {
   margin-bottom: 16px;
@@ -853,12 +856,6 @@ svg.customers-icon {
   margin-left: 80px;
 }
 
-.footer-discription{
-  font-weight: 500;
-  color: var(--primary-white-color);
-  margin-bottom: 16px;
-}
-
 .footer-form {
   display: flex;
   align-items: center;
@@ -882,7 +879,7 @@ svg.customers-icon {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .footer-form-button {
