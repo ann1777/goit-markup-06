@@ -25,9 +25,9 @@
     /**Grey - Hero background*/
     --dark-background-color: #2E2F42;
     /**Dairy - Modal background */
-    --modal-bg-color: #FCFCFC;
+    --modal-title-color: #2e2f42;
 
-    --icons-fill-color: #E5E5E5;
+    --icons-fill-color: #fff;
 
     --grey-fill-color: #8e8f99;
 
@@ -68,7 +68,7 @@
     --footer-padding-gap: 156px;
     --padding-gap: 24px;
     --items-gap: 24px;
-    --foter-media-gap: 16px;
+    --footer-media-gap: 16px;
     --hero-container-gap: 188px;
     --hero-bg: rgba(46, 47, 66, 0.7);
     --card-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
@@ -308,15 +308,12 @@ header {
     
     top: 50%;
     left: 50%;
-    width: 400px;
-    min-height: 576px;
+    width: 408px;
+    min-height: 584px;
     padding: 24px;
 
-    background-color: var(--modal-bg-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
@@ -391,7 +388,7 @@ header {
 .modal-title {
   font-weight: 500;
   text-align: center;
-  color: #2e2f42;
+  color: var(--modal-title-color);
   margin-top: 24px;
   margin-bottom: 16px;
 }
@@ -662,7 +659,7 @@ header {
 .team {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: var(--white-title-text-color);
+    background-color: var(--white-background-color);
 }
 
 .team-item { 
@@ -795,10 +792,18 @@ svg.customers-icon {
     display: flex;
     align-items: baseline;
 }
+
+.footer-media-box,
+.footer-subscribe-box {
+    margin-left: 120px;
+} 
+ 
 .footer-media-header {
-  font-weight: 500;
-  color: var(--footer-discription-color);
   margin-bottom: 16px;
+  font-weight: 500;
+  line-height: var(--footer-content-line-height);
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);v
 }
 
 .footer-content {
@@ -809,11 +814,6 @@ svg.customers-icon {
 }
 
 /**PAGE FOOTER ICONS*/
-
-.footer-media-box,
-.footer-subscribe-box {
-    margin-left: 120px;
-} 
 
 .footer-media {
     display: flex;
@@ -827,10 +827,6 @@ svg.customers-icon {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 
-.media-icon {
-    fill: var(--icons-fill-color);
-}
-
 .footer-media:is(:hover, :focus) {
     background-color: var(--success-color);
 }
@@ -841,7 +837,7 @@ svg.customers-icon {
   font-weight: 500;
   line-height: var(--footer-content-line-height);
   letter-spacing: 0.02em;
-  color: var(--white-text-color);
+  color: #FFFFFF;
 }
 
 .footer .footer-icon {
@@ -850,7 +846,7 @@ svg.customers-icon {
 
 .footer-media-icns {
   display: flex;
-  gap: var(--foter-media-gap);
+  gap: var(--footer-media-gap);
 }
 
 .footer-subscribe {
@@ -872,7 +868,7 @@ svg.customers-icon {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #FFFFFF;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
@@ -886,7 +882,7 @@ svg.customers-icon {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #FFFFFF;
 }
 
 .footer-form-button {
@@ -926,8 +922,6 @@ svg.footer-form-icon{
     color: var(--primary-white-color);
     background-color: var(var(--btn-active-color));
     background-size: cover;
-    /* flex-grow: 1; */
-    /* padding: 1px; */
 }
 
 .portfolio-cardhover-text {
@@ -972,6 +966,7 @@ svg.footer-form-icon{
     height: 48px;
     padding: calc(var(--padding-gap)/2) var(--padding-gap);
     font-size: var(--regular-font-size); 
+    letter-spacing: 0.04em;
     font-weight: 500;
     background: var(--white-background-color);
     border: 1px solid var(--white-text-color);
@@ -1001,7 +996,7 @@ svg.footer-form-icon{
 .card-item {
     border-top: none;
     background: var(--primary-white-color);
-    transition: box-shadow, color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .card-item:hover {
