@@ -771,7 +771,12 @@ header {
 }
 
 /**CUSTOMERS SECTION ICONS*/
-.customers-item:is(:hover, :focus) .customers-icon {
+.customers-item:hover .customers-icon {
+  outline: none;
+  fill: var(--btn-active-color);
+}
+
+.customers-item:focus .customers-icon {
   outline: none;
   fill: var(--btn-active-color);
 }
